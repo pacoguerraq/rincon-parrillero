@@ -24,37 +24,53 @@ export default function Gallery() {
 
     const galleryImages = [
         {
-            src: "/gallery-1.jpg",
-            alt: "Parrillada de arrachera y chorizo en Rincón Parrillero",
+            src: "/gallery/gallery-1.jpg",
+            alt: "Imagen Rincón Parrillero 1",
         },
         {
-            src: "/gallery-2.jpg",
-            alt: "Pollo al carbón dorado perfectamente asado",
+            src: "/gallery/gallery-2.jpg",
+            alt: "Imagen Rincón Parrillero 2",
         },
         {
-            src: "/gallery-3.jpg",
-            alt: "Cortes premium de carne en la parrilla",
+            src: "/gallery/gallery-3.jpg",
+            alt: "Imagen Rincón Parrillero 3",
         },
         {
-            src: "/gallery-4.jpg",
-            alt: "Itacate completo con guarniciones tradicionales",
+            src: "/gallery/gallery-4.jpg",
+            alt: "Imagen Rincón Parrillero 4",
         },
         {
-            src: "/gallery-5.jpg",
-            alt: "Interior del restaurante Rincón Parrillero",
+            src: "/gallery/gallery-5.jpg",
+            alt: "Imagen Rincón Parrillero 5",
         },
         {
-            src: "/gallery-6.jpg",
-            alt: "Asador profesional con carnes al carbón",
+            src: "/gallery/gallery-6.jpg",
+            alt: "Imagen Rincón Parrillero 6",
         },
         {
-            src: "/gallery-7.jpg",
-            alt: "Platillo especial de carne y pollo combinados",
+            src: "/gallery/gallery-7.jpg",
+            alt: "Imagen Rincón Parrillero 7",
         },
         {
-            src: "/gallery-8.jpg",
-            alt: "Detalle de cortes premium listos para servir",
+            src: "/gallery/gallery-8.jpg",
+            alt: "Imagen Rincón Parrillero 8",
         },
+        {
+            src: "/gallery/gallery-9.jpg",
+            alt: "Imagen Rincón Parrillero 9",
+        },
+        {
+            src: "/gallery/gallery-10.jpg",
+            alt: "Imagen Rincón Parrillero 10",
+        },
+        {
+            src: "/gallery/gallery-11.jpg",
+            alt: "Imagen Rincón Parrillero 11",
+        },
+        {
+            src: "/gallery/gallery-12.jpg",
+            alt: "Imagen Rincón Parrillero 12",
+        }
     ];
 
     useEffect(() => {

@@ -9,21 +9,20 @@ export default function Footer() {
         {
             name: "Facebook",
             icon: Facebook,
-            href: "https://facebook.com/rinconparrillero",
+            href: "https://www.facebook.com/rinconparrilleroqro",
         },
         {
             name: "Instagram",
             icon: Instagram,
-            href: "https://instagram.com/rinconparrillero",
+            href: "https://www.instagram.com/rinconparrilleromx",
         },
     ];
 
     const quickLinks = [
-        { name: "Inicio", href: "#inicio" },
         { name: "Nosotros", href: "#nosotros" },
         { name: "Menú", href: "#menu" },
-        { name: "Pollos", href: "#pollos" },
         { name: "Galería", href: "#galeria" },
+        { name: "Ubicación", href: "#ubicacion" },
         { name: "Contacto", href: "#contacto" },
     ];
 
@@ -85,9 +84,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                                 <span className="text-white/70 text-sm">
-                                    Epigmenio González 999, Local 1<br />
-                                    Plaza Real, Real Solare<br />
-                                    C.P. 76240, El Marqués, Querétaro
+                                    Epigmenio Gonzales 999, Local 1, Plaza Real, Real Solare., El Marques, Mexico, 76240
                                 </span>
                             </li>
                             <li className="flex items-center gap-3">
@@ -104,10 +101,10 @@ export default function Footer() {
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                                 <a
-                                    href="mailto:info@rinconparrillero.com"
+                                    href="mailto:rinconcitoparrillero.qro@gmail.com"
                                     className="text-white/70 hover:text-primary transition-colors text-sm"
                                 >
-                                    info@rinconparrillero.com
+                                    rinconcitoparrillero.qro@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -138,7 +135,7 @@ export default function Footer() {
                             <span className="block font-semibold text-white mb-1">
                                 Lunes - Domingo
                             </span>
-                            12:00 p.m. – 10:00 p.m.
+                            10:00 a.m. - 6:00 p.m.
                         </p>
                     </div>
                 </div>

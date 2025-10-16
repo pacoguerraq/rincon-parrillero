@@ -10,7 +10,7 @@ export default function Location() {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const schedule = [
-        { day: "Lunes - Domingo", hours: "12:00 p.m. – 10:00 p.m." },
+        { day: "Lunes a Domingo", hours: "10:00 a.m. - 6:00 p.m." }
     ];
 
     const contactInfo = [
@@ -24,11 +24,9 @@ export default function Location() {
             icon: MapPin,
             title: "Dirección",
             content: [
-                "Epigmenio González 999, Local 1",
-                "Plaza Real, Real Solare",
-                "C.P. 76240, El Marqués, Querétaro",
+                "Epigmenio Gonzales 999, Local 1, Plaza Real, Real Solare., El Marques, Mexico, 76240"
             ],
-            href: "https://goo.gl/maps/yourlink",
+            href: "https://maps.app.goo.gl/ryEh6XaT34nX8qD96",
         },
     ];
 
@@ -66,7 +64,7 @@ export default function Location() {
                         className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl"
                     >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.123456789!2d-100.123456!3d20.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDA3JzI0LjQiTiAxMDDCsDA3JzI0LjQiVw!5e0!3m2!1ses!2smx!4v1234567890"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7470.036769429926!2d-100.2854879!3d20.5873068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35d4ed1c217c9%3A0xad587eeeed6ca37c!2sRinc%C3%B3n%20Parrillero!5e0!3m2!1sen!2smx!4v1760580368788!5m2!1sen!2smx"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
@@ -138,7 +136,7 @@ export default function Location() {
                         {/* Action Buttons */}
                         <div className="grid sm:grid-cols-2 gap-4">
                             <a
-                                href="https://goo.gl/maps/yourlink"
+                                href="https://maps.app.goo.gl/ryEh6XaT34nX8qD96"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center gap-2 px-6 py-4 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"

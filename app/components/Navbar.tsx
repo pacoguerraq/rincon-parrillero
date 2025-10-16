@@ -6,10 +6,8 @@ import { Menu, X, Phone } from "lucide-react";
 import Image from "next/image";
 
 const navLinks = [
-    { name: "Inicio", href: "#inicio" },
     { name: "Nosotros", href: "#nosotros" },
     { name: "Menú", href: "#menu" },
-    { name: "Pollos", href: "#pollos" },
     { name: "Galería", href: "#galeria" },
     { name: "Reseñas", href: "#resenas" },
     { name: "Ubicación", href: "#ubicacion" },

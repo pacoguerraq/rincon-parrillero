@@ -45,7 +45,7 @@ export default function About() {
                     >
                         <div className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/about-image.jpg"
+                                src="/gallery/gallery-14.jpg"
                                 alt=""
                                 fill
                                 className="object-cover"

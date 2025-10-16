@@ -15,17 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: process.env.NEXT_PUBLIC_HOST ? new URL(process.env.NEXT_PUBLIC_HOST) : undefined,
   title: {
-    default: "Pastelería El Postre | Postres de alta calidad",
-    template: "%s | Pastelería El Postre",
+    default: "Rincón Parrillero | Restaurante de carnes asadas",
+    template: "%s | Rincón Parrillero",
   },
-  description: "Más de 20 años ofreciendo postres de calidad que nos destacan como una marca líder en la región.",
+  description: "Asador y rosticería de barrio en un rinconcito con mucha buena onda.",
   openGraph: {
-    title: "Pastelería El Postre | Postres de alta calidad",
-    description: "Más de 20 años ofreciendo postres de calidad que nos destacan como una marca líder en la región.",
+    title: "Rincón Parrillero | Restaurante de carnes asadas",
+    description: "Asador y rosticería de barrio en un rinconcito con mucha buena onda.",
     type: "website",
     locale: "es_ES",
     url: process.env.NEXT_PUBLIC_HOST,
-    siteName: "Pastelería El Postre",
+    siteName: "Rincón Parrillero",
   },
 };
 
