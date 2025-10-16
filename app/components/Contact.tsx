@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Phone, MessageCircle, Mail, Clock, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Facebook, Instagram } from "lucide-react";
 
 export default function Contact() {
     const ref = useRef(null);
@@ -28,6 +28,21 @@ export default function Contact() {
             href: "tel:4426155877",
             color: "bg-secondary hover:bg-secondary-dark",
             numbers: ["442 615 58 77", "442 891 35 99"],
+        },
+    ];
+
+    const socialLinks = [
+        {
+            name: "Facebook",
+            icon: Facebook,
+            href: "https://www.facebook.com/rinconparrilleroqro",
+            color: "hover:bg-blue-600",
+        },
+        {
+            name: "Instagram",
+            icon: Instagram,
+            href: "https://www.instagram.com/rinconparrilleromx",
+            color: "hover:bg-pink-600",
         },
     ];
 
@@ -63,7 +78,8 @@ export default function Contact() {
                         Haz tu pedido ahora
                     </h2>
                     <p className="text-lg text-neutral-gray max-w-2xl mx-auto mb-4">
-                        Contáctanos por WhatsApp o llámanos directamente para hacer tu pedido
+                        Contáctanos por WhatsApp o llámanos directamente para hacer tu
+                        pedido
                     </p>
                     <p className="text-base font-semibold text-primary">
                         ¡Entrega a domicilio disponible! 🚚
@@ -71,7 +87,7 @@ export default function Contact() {
                 </motion.div>
 
                 {/* Contact Methods */}
-                <div className="grid md:grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
                     {contactMethods.map((method, index) => (
                         <motion.div
                             key={method.title}
@@ -135,13 +151,40 @@ export default function Contact() {
                     ))}
                 </div>
 
+                {/* Social Media */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.6 }}
+                    className="flex justify-center items-center gap-4 mb-16"
+                >
+                    <span className="text-neutral-gray text-sm font-medium">
+                        Síguenos en:
+                    </span>
+                    <div className="flex gap-3">
+                        {socialLinks.map((social) => (
+                            <motion.a
+                                key={social.name}
+                                href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                whileHover={{ scale: 1.1, y: -2 }}
+                                whileTap={{ scale: 0.95 }}
+                                className={`w-10 h-10 bg-neutral-dark ${social.color} rounded-full flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg`}
+                                aria-label={social.name}
+                            >
+                                <social.icon className="w-5 h-5 text-white" />
+                            </motion.a>
+                        ))}
+                    </div>
+                </motion.div>
 
                 {/* Additional CTA */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="text-center mt-16"
+                    className="text-center"
                 >
                     <p className="text-neutral-gray mb-6 text-lg">
                         ¿Prefieres visitarnos en persona?

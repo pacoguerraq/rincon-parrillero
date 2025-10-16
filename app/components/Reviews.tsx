@@ -157,7 +157,7 @@ export default function Reviews() {
 
                                             {/* Review Text */}
                                             <p className="text-neutral-gray text-sm md:text-base leading-relaxed mb-6 italic flex-grow">
-                                                "{review.text}"
+                                                &quot;{review.text}&quot;
                                             </p>
 
                                             {/* Author */}

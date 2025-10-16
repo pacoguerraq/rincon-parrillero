@@ -84,7 +84,7 @@ export default function About() {
                                 Nuestro compromiso es conservar la esencia de la parrilla
                                 mexicana —por eso nuestro lema es{" "}
                                 <span className="text-primary font-semibold italic">
-                                    "Conservando tradición"
+                                    &quot;Conservando tradición&quot;
                                 </span>
                                 .
                             </p>
@@ -117,12 +117,14 @@ export default function About() {
                             ))}
                         </div>
 
-                        <a
-                            href="#menu"
-                            className="inline-block px-8 py-4 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-                        >
-                            Conoce Nuestro Menú
-                        </a>
+                        <div className="text-center">
+                            <a
+                                href="#menu"
+                                className="inline-block px-8 py-4 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                            >
+                                Conoce Nuestro Menú
+                            </a>
+                        </div>
                     </motion.div>
                 </div>
             </div>

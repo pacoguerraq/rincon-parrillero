@@ -56,7 +56,7 @@ export default function Footer() {
                             Conservando la tradición de la auténtica parrilla mexicana desde Querétaro.
                         </p>
                         <p className="text-primary font-serif italic font-semibold">
-                            "Conservando Tradición"
+                            &quot;Conservando Tradición&quot;
                         </p>
                     </div>
 
